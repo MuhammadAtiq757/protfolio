@@ -1,0 +1,79 @@
+/* styles.css */
+/* 
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .text-fade-in {
+    animation: fadeIn 3s ease-out;
+  }
+  
+  .text-slide-in {
+    animation: slideIn cubic-bezier(0.19, 1, 0.22, 1) ease-out;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  } */
+
+  .image-transition {
+    transition: transform 1s ease;
+    transform: translateX(10px);
+  }
+  
+  .image-transition.animate {
+    transform: translateX(0);
+  }
+
+  @keyframes text-loading {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .typing-animation {
+    animation: text-loading 2s infinite;
+    color: blueviolet;
+  }
+  
+
+/* neon-animation.css */
+
+@keyframes neon-glow {
+  0% {
+    text-shadow: 0 0 5px rgba(74, 219, 184, 0.7),
+      0 0 10px rgba(74, 219, 184, 0.5), 0 0 15px rgba(74, 219, 184, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(74, 219, 184, 0.7),
+      0 0 30px rgba(74, 219, 184, 0.5), 0 0 40px rgba(74, 219, 184, 0.3);
+  }
+  100% {
+    text-shadow: 0 0 5px rgba(74, 219, 184, 0.7),
+      0 0 10px rgba(74, 219, 184, 0.5), 0 0 15px rgba(74, 219, 184, 0.3);
+  }
+}
+
+.neon-animation {
+  animation: neon-glow 1.5s ease-in-out infinite;
+}

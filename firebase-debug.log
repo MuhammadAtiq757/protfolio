@@ -1,0 +1,31 @@
+[debug] [2023-07-03T06:34:55.842Z] ----------------------------------------------------------------------
+[debug] [2023-07-03T06:34:55.847Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\JISHAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-07-03T06:34:55.850Z] CLI Version:   11.30.0
+[debug] [2023-07-03T06:34:55.851Z] Platform:      win32
+[debug] [2023-07-03T06:34:55.852Z] Node Version:  v18.16.0
+[debug] [2023-07-03T06:34:55.854Z] Time:          Mon Jul 03 2023 12:34:55 GMT+0600 (Bangladesh Standard Time)
+[debug] [2023-07-03T06:34:55.855Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-07-03T06:34:55.871Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-07-03T06:34:55.876Z] > authorizing via signed-in user (muhammadatiq757@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\projects\react_portfolio
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+
+[debug] [2023-07-03T06:35:20.177Z] Error: Timed out.
+    at Timeout._onTimeout (C:\Users\JISHAN\AppData\Roaming\npm\node_modules\firebase-tools\lib\utils.js:253:49)
+    at listOnTimeout (node:internal/timers:569:17)
+    at process.processTimers (node:internal/timers:512:7)
+[error] 
+[error] Error: An unexpected error has occurred.
