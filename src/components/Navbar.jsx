@@ -8,7 +8,7 @@ const Navbar = () => {
     { name: "ABOUT", link: "#about" },
     { name: "SKILLS", link: "#skills" },
     { name: "PROJECTS", link: "#projects" },
-    // { name: "CONTACT", link: "#contact" },
+    { name: "CONTACT", link: "#contact" },
   ];
   useEffect(() => {
     window.addEventListener("scroll", () => {
