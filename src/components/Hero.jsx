@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import hero from "../assets/images/hero.png";
 import "./animate.css";
+import { Typewriter } from 'react-simple-typewriter'
 // import "./neon-animation.css"; // Import the CSS file for the neon animation
 
 const Hero = () => {
+
   const [animate, setAnimate] = useState(false);
 
   useEffect(() => {
@@ -16,6 +18,9 @@ const Hero = () => {
     "logo-linkedin",
     "logo-twitter",
   ];
+
+
+
 
   return (
     <section
@@ -33,24 +38,30 @@ const Hero = () => {
       </div>
       <div className="flex-1">
         <div className="md:text-left text-center">
-          <h1 className="md:text-5xl text-2xl md:leading-normal leading-10 text-white font-bold text-fade-in">
-            <span className="text-purple-600 md:text-6xl text-5xl">
-              Hello!
-              <br />
-            </span>
-            My Name is{" "}
-            <span
-              className={`text-slide-in ${animate ? "typing-animation" : ""}`}
-            >
-              <span className={`text-loading ${animate ? "animate__animated animate__fadeIn" : ""}`}>
-                Muhammad Atiq
-              </span>
-            </span>
-          </h1>
+<div className="text-3xl">
+<h1 style={{ paddingTop: '5rem', margin: 'auto 0', fontWeight: 'normal' }}>
+  <h1 className="font-bold">Hello! I am Muhammad Atiq</h1>
+        <span className="font-bold">I Am A</span>{' '}
+        <span className="text-purple-600 font-bold text-4xl">
+          {/* Style will be inherited from the parent element */}
+          <Typewriter
+            words={['Front-End Developer', 'MERN-Stack Developer', 'Web Developer']}
+            loop={5}
+            cursor
+            cursorStyle='_'
+            typeSpeed={70}
+            deleteSpeed={50}
+            delaySpeed={1000}
+            // onLoopDone={handleDone}
+            // onType={handleType}
+          />
+        </span>
+      </h1>
+</div>
           <h4 className="md:text-2xl mb-2 text-lg md:leading-normal leading-5 mt-4 font-bold text-gray-600">
             MERAN-Stack Developer
           </h4>
-          <a href="./src/assets/Code_a_program.pdf" download>
+          <a href="./src/assets/atiq.pdf" download>
             <button className={`btn bg-purple-600 p-4 rounded ${animate ? "neon-animation" : ""}`}>
               Download Resume
             </button>
